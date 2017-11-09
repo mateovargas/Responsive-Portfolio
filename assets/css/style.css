@@ -136,7 +136,7 @@ textarea {
 	color: #4aaaa5;
 	font-size: 24px;
 	padding: 20px 20px 20px 20px;
-
+	float: left;
 }
 
 .socialContainer li {
@@ -150,7 +150,8 @@ textarea {
 	width: 15%;
 	height: auto;
 	padding: 10px 10px 10px 10px;
-	float: center;
+	float: left;
+	margin-left: 20px;
 
 }
 
@@ -227,6 +228,12 @@ footer p {
   border-bottom: 0;
 }
 
+iframe {
+
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
 
 /* Media Queries */
 
@@ -234,7 +241,87 @@ footer p {
 	.bioContainer {
 
 		width: 325px;
-		
+
+	}
+
+	iframe {
+
+		display: none;
+
+	}
+}
+
+@media screen and (max-width: 768px){
+
+	.socialContainer {
+
+		position: relative;
+		top: 700px;
+		margin-bottom: 100px;
+		width: 100%;
+		height: auto;
+
+	}
+
+	.bioContainer {
+
+		position: relative;
+		width: 100%;
+		height: auto;
+
+	}
+
+	.container {
+
+		position: absolute;
+	}
+
+	iframe {
+
+		display: none;
+	}
+
+	
+}
+
+@media screen and (max-width: 640px){
+	.navbar {
+
+		position: static;
+
+	}
+
+	footer {
+
+		height: 50px;
+	}
+
+	.socialContainer {
+
+		position: relative;
+		top: 700px;
+		margin-bottom: 100px;
+		width: 100%;
+		height: auto;
+
+	}
+
+	.bioContainer {
+
+		position: relative;
+		width: 100%;
+		height: auto;
+
+	}
+
+	.container {
+
+		position: absolute;
+	}
+
+	iframe {
+
+		display: none;
 	}
 }
 
